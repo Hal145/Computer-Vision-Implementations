@@ -327,13 +327,3 @@ if __name__ == "__main__":
         args['noOfClusters'], args['confusionMatrixSize'])
 
 
-""""
-python3 main2.py --name 'Caltech' --dataDir '/mnt/Depolama/BMCOURSES/3rd_term/CMPE537/Assignments/4/pythonProject/Caltech20/Caltech20/train' --testDir '/mnt/Depolama/BMCOURSES/3rd_term/CMPE537/Assignments/4/pythonProject/Caltech20/Caltech20/test' --featureDescriptor 'SIFT' --noOfClusters 50 --kernel "linear"
-
-python3 test.py --name 'Coin' --dataDir '/mnt/Depolama/BMCOURSES/3rd_term/CMPE537/Assignments/4/pythonProject/turCoins85/train' --testDir '/mnt/Depolama/BMCOURSES/3rd_term/CMPE537/Assignments/4/pythonProject/turCoins85/test' --featureDescriptor 'SIFT' --noOfClusters 50 --kernel "linear"
-
-python3 main2.py --name 'Caltech20' --dataDir '/mnt/Depolama/BMCOURSES/3rd_term/CMPE537/Assignments/4/pythonProject/Caltech20/Caltech20/train' --testDir '/mnt/Depolama/BMCOURSES/3rd_term/CMPE537/Assignments/4/pythonProject/Caltech20/Caltech20/test' --featureDescriptor 'SIFT' --nuOfDescriptors 3 --noOfClusters 500 --confusionMatrixSize 10 
-
-"""
-
-
