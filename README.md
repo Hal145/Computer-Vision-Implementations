@@ -6,8 +6,18 @@ Color quantization is utilized for various reasons in image processing and compu
 - Reduced Memory Usage: Useful when working with limited resources or optimizing file sizes for efficient storage or transmission.
 - Compression and Bandwidth Optimization: Easier to transmit or store images, especially in situations with limited bandwidth.
 
+With manually  centers:
+
+![What is this](Results/color_q_results_manual_selection.png)
+
+With randomly selected centers:
+
+![What is this](Results/color_q_results_random_selection.png)
+
 2-Connected Component Analysis
 A fundamental image processing technique used to identify and analyze distinct regions or objects within an image.
+
+![What is this](Results/connected_component_analysis.png)
 
 3- Bag-of-Features (BoF) Implementation
 kornia, kornia_moons, and OpenCV libraries are used. The implementation includes the following steps: 
