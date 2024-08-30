@@ -9,7 +9,7 @@ Color quantization is a technique used in image processing and computer graphics
 - **Reduced Memory Usage:** Optimizes file sizes for efficient storage or transmission, especially useful when working with limited resources.
 - **Compression and Bandwidth Optimization:** Simplifies the transmission or storage of images, which is particularly beneficial in environments with limited bandwidth.
 
-### Implementations
+##### Implementations
 
 - **With Manually Selected Centers:**
   
@@ -29,7 +29,7 @@ Connected Component Analysis is a fundamental image processing technique used to
 
 ![Connected Component Analysis Result](Results/connected_component_analysis.png)
 
-## 3. Bag-of-Features (BoF) Implementation
+## 3. Bag-of-Features (BoF)
 
 This implementation uses the `kornia`, `kornia_moons`, and `OpenCV` libraries to demonstrate a Bag-of-Features model, a popular technique for image classification and retrieval.
 
