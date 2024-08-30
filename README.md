@@ -35,17 +35,17 @@ This implementation uses the `kornia`, `kornia_moons`, and `OpenCV` libraries to
 
 ### Steps Involved
 
-1. **Feature Extraction and Encoding:**
+i. **Feature Extraction and Encoding:**
    - Extract local features (detectors) from images using OpenCV.
    - Encode the features into fixed-length vector representations (descriptors) using SIFT and HyNet methods.
 
-2. **Codebook Construction and Feature Quantization:**
+ii. **Codebook Construction and Feature Quantization:**
    - Construct a codebook by clustering local features into visual codewords using k-means. Each codeword represents a cluster center or prototype of similar features.
 
-3. **Histogram Creation:**
+iii. **Histogram Creation:**
    - Use the quantized visual codewords to build a histogram representation, known as the Bag-of-Features representation, which counts the occurrence of each visual codeword in the image.
 
-4. **Classification:**
+iv. **Classification:**
    - Use Multi-Layer Perceptron (MLP) and Support Vector Machine (SVM) classifiers to categorize the images based on the Bag-of-Features representation.
 
 
