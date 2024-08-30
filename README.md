@@ -1,30 +1,54 @@
-# Computer-Vision
-Various CV implementations
+# Various Computer Vision (CV) Implementations
 
-1- Color Quantization
-Color quantization is utilized for various reasons in image processing and computer graphics. 
-- Reduced Memory Usage: Useful when working with limited resources or optimizing file sizes for efficient storage or transmission.
-- Compression and Bandwidth Optimization: Easier to transmit or store images, especially in situations with limited bandwidth.
+This repository showcases various implementations of fundamental computer vision techniques. Each method is explained below, with visual results provided.
 
-With manually  centers:
+## 1. Color Quantization
 
-![What is this](Results/color_q_results_manual_selection.png)
+Color quantization is a technique used in image processing and computer graphics to reduce the number of distinct colors in an image. This approach is useful for several reasons:
 
-With randomly selected centers:
+- **Reduced Memory Usage:** Optimizes file sizes for efficient storage or transmission, especially useful when working with limited resources.
+- **Compression and Bandwidth Optimization:** Simplifies the transmission or storage of images, which is particularly beneficial in environments with limited bandwidth.
 
-![What is this](Results/color_q_results_random_selection.png)
+### Implementations
 
-2-Connected Component Analysis
-A fundamental image processing technique used to identify and analyze distinct regions or objects within an image.
+- **With Manually Selected Centers:**
+  
+  The image is processed using manually selected color centers for quantization.
 
-![What is this](Results/connected_component_analysis.png)
+  ![Manual Centers Result](Results/color_q_results_manual_selection.png)
 
-3- Bag-of-Features (BoF) Implementation
-kornia, kornia_moons, and OpenCV libraries are used. The implementation includes the following steps: 
-- Feature Extraction and encoding: This step extracts local features (detectors) from images using OpenCV. Once the local features are extracted, they are encoded into a fixed-length vector representation (descriptors).  SIFT and HyNet methods are used for feature encoding.
-- Codebook Construction and Feature Quantization: The codebook is a collection of visual codewords obtained through clustering the local features. Each visual codeword represents a cluster center or a prototype of similar features. The codebook captures the statistical distribution of visual features in the dataset. The k-means technique is used for feature quantization.
-- Histogram Creation: The quantized visual codewords are then used to construct a histogram representation, the Bag-of-Features representation. The histogram counts the occurrence of each visual codeword in the image.
-- Classification: MLP and SVM are used as classifiers. 
+- **With Randomly Selected Centers:**
+  
+  The image is processed using randomly selected color centers for quantization.
+
+  ![Random Centers Result](Results/color_q_results_random_selection.png)
+
+## 2. Connected Component Analysis
+
+Connected Component Analysis is a fundamental image processing technique used to identify and analyze distinct regions or objects within an image. It is commonly used in various applications such as object detection, segmentation, and image recognition.
+
+![Connected Component Analysis Result](Results/connected_component_analysis.png)
+
+## 3. Bag-of-Features (BoF) Implementation
+
+This implementation uses the `kornia`, `kornia_moons`, and `OpenCV` libraries to demonstrate a Bag-of-Features model, a popular technique for image classification and retrieval.
+
+### Steps Involved
+
+1. **Feature Extraction and Encoding:**
+   - Extract local features (detectors) from images using OpenCV.
+   - Encode the features into fixed-length vector representations (descriptors) using SIFT and HyNet methods.
+
+2. **Codebook Construction and Feature Quantization:**
+   - Construct a codebook by clustering local features into visual codewords using k-means. Each codeword represents a cluster center or prototype of similar features.
+
+3. **Histogram Creation:**
+   - Use the quantized visual codewords to build a histogram representation, known as the Bag-of-Features representation, which counts the occurrence of each visual codeword in the image.
+
+4. **Classification:**
+   - Use Multi-Layer Perceptron (MLP) and Support Vector Machine (SVM) classifiers to categorize the images based on the Bag-of-Features representation.
+
+
 
 
 
