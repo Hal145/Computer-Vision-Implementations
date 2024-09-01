@@ -14,18 +14,21 @@ Color quantization is a technique used in image processing and computer graphics
 - **With Manually Selected Centers:**
   
   The image is processed using manually selected color centers for quantization.
+  [View Implementation](Color_Quatization.py)
 
   ![Manual Centers Result](Results/color_q_results_manual_selection.png)
 
 - **With Randomly Selected Centers:**
   
   The image is processed using randomly selected color centers for quantization.
+  [View Implementation](Color_Quatization.py)
 
   ![Random Centers Result](Results/color_q_results_random_selection.png)
 
 ## 2. Connected Component Analysis
 
 Connected Component Analysis is a fundamental image processing technique used to identify and analyze distinct regions or objects within an image. It is commonly used in various applications such as object detection, segmentation, and image recognition.
+[View Implementation](Connected_Component_Analysis.py)
 
 ![Connected Component Analysis Result](Results/connected_component_analysis.png)
 
@@ -46,7 +49,7 @@ iii. **Histogram Creation:**
    - Use the quantized visual codewords to build a histogram representation, known as the Bag-of-Features representation, which counts the occurrence of each visual codeword in the image.
 
 iv. **Classification:**
-   - Use Multi-Layer Perceptron (MLP) and Support Vector Machine (SVM) classifiers to categorize the images based on the Bag-of-Features representation.
+   - Use Multi-Layer Perceptron (MLP) [[View Implementation](Bag-of-Features_MLP_Classifier.py)] and Support Vector Machine (SVM) [[View Implementation](Bag-of-Features_SVM_Classifier.py)] classifiers to categorize the images based on the Bag-of-Features representation.
 
 
 
